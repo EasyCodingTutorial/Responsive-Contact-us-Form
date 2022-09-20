@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+/*  */
+* {
+  font-family: "Besley", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: 0.2s linear all;
+}
+*::selection {
+  background: rgb(7, 40, 170);
+  color: #fff;
+}
+html {
+  font-size: 62.5%;
+}
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+.heading span {
+  color: rgb(7, 40, 170);
+  text-transform: uppercase;
+}
+
+.contact form {
+  max-width: 90rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+.contact form .inputBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .inputBox .input {
+  width: 49%;
+}
+.contact form .inputBox .input span {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+}
+.contact form .input input,
+textarea {
+  background: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+.contact form .input input:focus,
+textarea:focus {
+  border: 0.1rem solid rgb(7, 40, 170);
+}
+.btn {
+  display: inline-block;
+  background: rgb(7, 40, 170);
+  cursor: pointer;
+  color: #fff;
+  padding: 0.9rem 3rem;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+/* Media Query */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .contact form .inputBox .input {
+    width: 100% !important;
+  }
+}
